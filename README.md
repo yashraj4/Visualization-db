@@ -1,16 +1,18 @@
 # Data Visualization Dashboard (Flask + PostgreSQL)
 
-![Dashboard Screenshot](frontend/public/assets/ss1.jpg)
-![Dashboard Screenshot](frontend/public/assets/ss2.jpg)
+![ss1](https://github.com/user-attachments/assets/d07d14ca-86ed-4dd7-ad62-d90faf3ee38d)
+![ss2](https://github.com/user-attachments/assets/4405978f-73cf-4522-a9c5-e2ca57b0d590)
 
 ## 🛠 Setup Instructions
 
-# Set up Python environment
+### Set up Python environment
+```
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate     # Windows
+```
 
-# 🐘 PostgreSQL Setup
+### 🐘 PostgreSQL Setup
 ```sql
 -- Login to PostgreSQL
 sudo -u postgres psql
@@ -28,7 +30,7 @@ GRANT ALL PRIVILEGES ON DATABASE db_name TO user_name;
 \q
 ```
 
-# ⚙️ Backend (Flask)
+## ⚙️ Backend (Flask)
 
 ```
 # Install dependencies
@@ -42,18 +44,18 @@ python app.py
 ```
 
 ## 💻 Frontend Setup
-# Navigate to frontend directory
-cd frontend
+### Navigate to frontend directory
+`cd frontend`
 
-# Install dependencies
-npm install
+### Install dependencies
+`npm install`
 
-# Start development server
-npm start
+### Start development server
+`npm start`
 
 ## 📦 Dependencies
 
-# Backend (Python/Flask)
+### Backend (Python/Flask)
 ```python
 # requirements.txt
 flask==2.3.2
@@ -62,7 +64,7 @@ flask-cors==3.0.10
 python-dotenv==1.0.0
 ```
 
-# Python (React.js)
+### Frontend (React.js)
+![ss3](https://github.com/user-attachments/assets/69d128a3-a04b-4a24-8843-82bffa61931a)
 
-![Dashboard Screenshot](frontend/public/assets/ss3.jpg)
 
