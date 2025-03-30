@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Dashboard data {% endblock %}</h1>
+    
+    {% for i in data %}
+        <div class='i-card'>
+            <h3>ID: {{ i[0] }}</h3>
+            <p><strong>End Year:</strong> {{ i[1] }}</p>
+            <p><strong>Intensity:</strong> {{ i[2] }}</p>
+            <p><strong>Sector:</strong> {{ i[3] }}</p>
+            <p><strong>Topic:</strong> {{ i[4] }}</p>
+            <p><strong>Insight:</strong> {{ i[5] }}</p>
+            <p><strong>URL:</strong> <a href="{{ i[6] }}" target="_blank">{{ i[6] }}</a></p>
+            <p><strong>Region:</strong> {{ i[7] }}</p>
+            <p><strong>Start Year:</strong> {{ i[8] }}</p>
+            <p><strong>Impact:</strong> {{ i[9] }}</p>
+            <p><strong>Added:</strong> {{ i[10] }}</p>
+            <p><strong>Published:</strong> {{ i[11] }}</p>
+            <p><strong>Country:</strong> {{ i[12] }}</p>
+            <p><strong>Relevance:</strong> {{ i[13] }}</p>
+            <p><strong>PESTLE:</strong> {{ i[14] }}</p>
+            <p><strong>Source:</strong> {{ i[15] }}</p>
+            <p><strong>Title:</strong> {{ i[16] }}</p>
+            <p><strong>Likelihood:</strong> {{ i[17] }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
